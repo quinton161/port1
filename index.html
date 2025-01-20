@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-text">Quinton</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1><span>Quinton</span> from Uncommon.org</h1>
+                <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">Let's Talk</a>
+            </div>
+            <div class="jarvis-interface">
+                <div class="circle-container">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle"></div>
+                    <div class="center-circle"></div>
+                    <div class="scanning-line"></div>
+                    <div class="data-points">
+                        <div class="data-point"></div>
+                        <div class="data-point"></div>
+                        <div class="data-point"></div>
+                        <div class="data-point"></div>
+                    </div>
+                    <div class="tech-text">
+                        <span>INITIALIZING</span>
+                        <span>SCANNING</span>
+                        <span>ANALYZING</span>
+                        <span>PROCESSING</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/header-removebg.png" alt="" class="animate slide-right">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title animate fade-in">About Me</h1>
+                    <p class="animate slide-left">I am a passionate Software Developer at Uncommon.org, where I combine creativity with technical expertise to build impactful digital solutions. With a strong foundation in web development and a keen eye for user experience, I specialize in creating responsive and intuitive applications that make a difference.
+
+At Uncommon.org, I've had the opportunity to work on various projects that empower communities through technology. My expertise includes front-end development using HTML5, CSS3, and JavaScript, as well as working with modern frameworks and tools to deliver seamless user experiences.
+
+I'm particularly passionate about using technology for social impact, which aligns perfectly with Uncommon.org's mission. Through my work, I strive to create accessible and user-friendly applications that help bridge the digital divide and provide educational opportunities to underserved communities.
+
+When I'm not coding, I'm constantly learning new technologies and best practices to stay at the forefront of web development. I believe in writing clean, maintainable code and creating solutions that not only meet current needs but are also scalable for future growth.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                         <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>
+                                <span>UI?UX</span><br>Designing Web/App interfaces
+                            </li>
+                            <li>
+                                <span>Web Develpment</span><br>Designing Web/App interfaces
+                            </li>
+                            <li>
+                                <span> Digital Marketing</span><br>Design posterson canva and figma
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span>2024 - current</span><br> Designed for a opening company selling  Gym Equipment 
+                            </li>
+                                            </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li>
+                                <span>2024</span><br>UI?UX Designing Web/App interfaces at uncommon
+                            </li>
+                            <li>
+                                <span>2024</span><br> Learnt Web Develpment at uncommon
+                            </li>
+                            <li>
+                                <span>2024</span><br>Digital Marketing
+                                Design posterson canva and figma
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------services----- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+             <div class="services-list">
+                <div class="animate scale-in">
+                    <i class="fab fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting responsive and dynamic websites using modern technologies. Specializing in clean code, SEO optimization, and cross-browser compatibility. Creating engaging user experiences with HTML5, CSS3, and JavaScript while ensuring mobile-first design principles.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="animate scale-in">
+                    <i class="fab fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating intuitive and user-centered designs through careful research and testing. Developing wireframes, prototypes, and user flows that enhance user satisfaction. Focusing on accessibility, visual hierarchy, and seamless interactions across all platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="animate scale-in">
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Developing innovative mobile applications for iOS and Android platforms. Implementing modern design patterns, smooth animations, and efficient navigation flows. Creating native and cross-platform solutions that deliver exceptional user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+             </div>
+        </div>
+     </div>
+     <!-- this is my portfolio -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work animate fade-in">
+                    <img src="images/pp.png" alt="png">
+                    <div class="layer">
+                        <h3>Workspace App</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store. </p>
+                          <a href="https://quinton161.github.io/Workspace/"><i class="fas fa-external-link-alt"></i></a>  
+                    </div>
+                </div>
+                <div class="work animate fade-in">
+                    <img src="images/shoptacle.png" alt="png">
+                    <div class="layer">
+                        <h3>shoptacle Online Shopping App</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store. </p>
+                          <a href=" https://quinton161.github.io/shoptacle/"><i class="fas fa-external-link-alt"></i></a>  
+                    </div>
+                </div>
+                <div class="work animate fade-in">
+                    <img src="images/truck.png" alt="png">
+                    <div class="layer">
+                        <h3>SFS-trucks App</h3>
+                        <p>The app connects you the talented people around the world.
+                            Download it from play store. </p>
+                          <a href="https://quinton161.github.io/SFS-trucks/"><i class="fas fa-external-link-alt"></i></a>  
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-container">
+                <a href="./pages/projects.html" class="btn see-more">See More</a>
+            </div>
+        </div>
+      </div>
+ <!-- this is contact  -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left animate slide-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i>quintonndlovu161@gmail.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i>0785385293</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61567402557897&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">
+                    <span>Download CV</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+            <div class="contact-right animate slide-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright  Quinton.Portifolio <i class="fas fa-heart"></i></p>
+    </div>
+  </div>
+     <script>
+
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+           sidemenu.style.right ="0" 
+        }
+        function closemenu(){
+           sidemenu.style.right ="-200px" 
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3tY0rd2qcZmkHNOezxiHq5cnmLq4w_QGNcgbKnese4WyPHbSGMpMD6AYRet1PUu8wpQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const mgs = document.getElementById(msg)
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)} )
+            .then(response => {
+              msg.innerHTML = "Message sent successfully"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.reset () 
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+    <script>
+        // Scroll Animation
+        const animateElements = document.querySelectorAll('.animate');
+        const serviceItems = document.querySelectorAll('.services-list div');
+        const contactSections = document.querySelectorAll('.contact-left, .contact-right');
+
+        const isInViewport = (element) => {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85
+            );
+        };
+
+        const handleScroll = () => {
+            animateElements.forEach(element => {
+                if (isInViewport(element)) {
+                    element.style.animationDelay = element.dataset.delay || '0s';
+                    element.style.animationPlayState = 'running';
+                }
+            });
+
+            serviceItems.forEach(item => {
+                if (isInViewport(item)) {
+                    item.classList.add('show');
+                }
+            });
+
+            contactSections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('show');
+                }
+            });
+        };
+
+        // Initial check
+        handleScroll();
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+
+</html>

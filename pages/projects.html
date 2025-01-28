@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>My Projects - Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
 </head>
 <body>
+    <div class="stars"></div>
     <div class="container">
-        <h1>My Projects</h1>
-        <!-- project list dynamically loaded here  -->
-         <div id="project-list"></div>
+        <nav>
+            <div class="logo">
+                <span class="logo-text">Quinton</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <h1 class="sub-title">All Projects</h1>
+        <div id="projects-container" class="work-list">
+            <!-- Projects will be dynamically inserted here -->
+        </div>
     </div>
+
     <script src="../js/script.js"></script>
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Mobile menu functionality
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+           sidemenu.style.right ="0" 
+        }
+        function closemenu(){
+           sidemenu.style.right ="-200px" 
+        }
+    </script>
 </body>
 </html>
